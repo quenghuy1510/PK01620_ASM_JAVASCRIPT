@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo danh sách sản phẩm</title>
+
+
+</head>
+
+<body>
+    <script>
+        //1. lưu trữ danh sách sản phẩm
+        //1.1: tạo danh sách
+        var danhSachSanPham = new Array();
+
+
+
+        //1.2: chuyển danh sách sản phẩm
+        var json = JSON.stringify(danhSachSanPham);
+        console.log(json);
+
+        //1.3: luu trữ xuống localstorgae
+        localStorage.setItem('danhSachSanPham', json);
+
+        //yêu cầu 2: lấy danh sách lên từ localstor hiển thị
+
+        var jsonLayTuLocal = localStorage.getItem('danhSachSanPham');
+
+        var danhSachLocal = JSON.parse(jsonLayTuLocal);
+        console.log(danhSachLocal);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

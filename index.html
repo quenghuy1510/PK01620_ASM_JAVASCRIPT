@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện web</title>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+    <!--Liên kết thư viện .jquery.min-->
+<script src="js/jquery.min.js"></script>
+    <!--Liên kết thư viện bxslider.min.js -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- khỏi tạo slider-->
+<script>
+  $(document).ready(function(){
+$('.slider').bxSlider({
+    mode : 'horizontal',
+    speed : 500,
+    auto : true,
+    pause : 5000
+});
+      });
+</script>
+<head>
+    
+    <style>
+        #hien-thi-san-pham{
+            width: 1200px;
+            
+            margin: 0 auto;
+        }
+       
+        .slider {
+            width: 900px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: aqua;
+            margin-top: 30px;
+            margin-bottom: 50px;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .san-pham {
+            width: calc(25% - 40px);
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 10px 20px;
+        }
+
+        .ten-san-pham {
+            font-size: 15px;
+            line-height: 30px;
+            color: black;
+        }
+
+        .gia-goc-san-pham {
+            font-size: 12px;
+            color: #c0c0c0;
+            text-decoration: line-through;
+        }
+        
+        .hinh-anh-san-pham img{
+            max-width: 200px;
+            max-height: 100%;
+          
+        }
+
+        .gia-ban {
+            font-size: 18px;
+            color: red;
+
+        }
+
+        .khu-vuc {
+            font-size: 17px;
+            color: #643406;
+            text-align: right;
+        }
+
+        .giam-gia {
+            color: red;
+            text-align: right;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="thanhtren">
+			<div class="khung">
+				<div class="khunggiohang">
+					<div class="donhang">
+                        <div class="logogiohang">
+                            <img src="images/giohang.png">
+                        </div>
+						<a href="gioHang.html  ">
+							Theo dõi đơn hàng
+						</a>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="thanhlogo">
+			<div class="khunglogo">
+				<div class="logo">
+				<a href="index.html">
+					<img src="images/logo1.png">
+				</a>
+				</div>
+				<div class="thanhtimkiem">
+				<input type="text" placeholder="Nhập sản phẩm cần tìm...">
+				<input type="button" value="Tìm Kiếm">
+				</div>
+				<div class="dangnhap">
+					<div class="logonho">
+						<img src="images/dangnhap.png">
+					</div>
+					<div class="dn">
+						<b><a href="#">Đăng kí</a> <br></b>
+						Hoặc
+						<b><a href="#">Đăng nhập</a></b>
+					</div>
+				</div>
+			</div>	
+        </div>
+        <div class="menutop1">
+			<div class="khungmenu1">
+				<nav>
+				<ul>
+					<li class="active ">
+						<a href="index.html">TRANG CHỦ</a>
+					</li>
+					<li >
+						<a href="#">IPHONE 5</a>
+					</li>
+					<li>
+						<a href="#">IPHONE 6</a>
+					</li>
+					<li>
+						<a href="#">IPHONE 7</a>
+					</li>
+					<li>
+						<a href="#">IPHONE 8</a>
+                    </li>
+                    <li>
+						<a href="#">IPHONE X SMAX</a>
+                    </li>
+                    <li>
+						<a href="them-san-pham.html" target="_blank">THÊM SẢN PHẨM</a>
+					</li>
+					<li>
+						<a href="tao-danh-sach-san-pham.html" target="_blank">UPLOAD SẢN PHẨM</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+        
+
+
+
+    </header>
+
+
+
+
+
+
+
+    <div class="thanhcamket">
+            <div class="giaohangtoanquoc">
+                <div class="khung1">
+                    <img src="images/maybay1.png">
+                </div>
+                <ul>
+                    <li><a href="#">GIAO HÀNG TOÀN QUỐC</a></li>
+                </ul>
+            </div>
+            <div class="hotro">
+                <div class="khung1">
+                    <img src="images/dienthoai.png">
+                </div>
+                <ul>
+                    <li><a href="#">HỖ TRỢ 24/7</a></li>
+                </ul>
+            </div>
+            <div class="doisize">
+                <div class="khung1">
+                    <img src="images/cong.png">
+                </div>
+                <ul>
+                    <li><a href="#">ĐỔI LẠI MIỄN PHĨ</a></li>
+                </ul>
+            </div>
+            <div class="uudai">
+                <div class="khung1">
+                    <img src="images/khungtich.png">
+                </div>
+                <ul>
+                    <li><a href="#">NHIỀU ƯU ĐÃI</a></li>
+                </ul>
+            </div>
+            <div class="thanhtoan">
+                <div class="khung1">
+                    <img src="images/tich.png">
+                </div>
+                <ul>
+                    <li><a href="#">THANH TOÁN GỌN LẸ</a></li>
+                </ul>
+            </div>
+        </div>
+    <!-- Hiển thị nội dung chính của web -->
+    <main>
+
+        <!-- slider -->
+        <section class="slider">
+            <div>
+				<a href="#"><img src="images/1.png"></a>
+			</div>
+			<div>
+				<a href="#"><img src="images/2.png"></a>
+			</div>
+			<div>
+				<a href="#"><img src="images/3.png"></a>
+			</div>
+        </section>
+        
+        <div class="menutop">
+			<div class="khungmenu">
+				<ul class="nav">
+                    <li>
+                        <a href="#">Danh Sách Sản Phẩm</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Iphone 5</a></li>
+                            <li><a href="#">Iphone 6</a></li>
+                            <li><a href="#">Iphone 7</a></li>
+                            <li><a href="#">Iphone 8</a></li>
+                            <li><a href="#">Iphone X</a></li>
+                            <li><a href="#">Iphone 6</a></li>
+                            <li><a href="#">Iphone 11 PROMAX</a></li>
+                         </ul>
+                    </li>
+                    <li>
+                      <a href="#">Dung Lượng</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Phiên Bản 16G</a></li>
+                         <li><a href="#">Phiên Bản 32G</a></li>
+                         <li><a href="#">Phiên Bản 64G</a></li>
+                         <li><a href="#">Phiên Bản 128G</a></li>
+                         <li><a href="#">Phiên Bản 256G</a></li>
+                         <li><a href="#">Phiên Bản 512G</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                        <a href="#">Màu Sắc</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Đen</a></li>
+                            <li><a href="#">Xám</a></li>
+                            <li><a href="#">Vàng Kim</a></li>
+                            <li><a href="#">Hồng</a></li>
+                            <li><a href="#">Đỏ</a></li>
+                            
+                         </ul>
+                    </li>
+                    <li>
+                        <a href="#">Chất Lượng</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Iphone Mới</a></li>
+                            <li><a href="#">Iphone Cũ</a></li>
+                         </ul>
+                    </li>
+                    <li>
+                        <a href="#">Khu Vực</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Sài Gòn</a></li>
+                            <li><a href="#">Hà Nội</a></li>
+                            <li><a href="#">Đà Nẵng</a></li>
+                         </ul>
+                    </li>
+                   
+                 </ul>
+			</div>
+			
+		</div>
+
+        <div id="hien-thi-san-pham">
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="khungduoi">
+                <div class="thongtin">
+                    <div class="footerlogo">
+                        <div class="logoduoi">
+                            <a href="#"><img src="images/logoduoi.png"></a>
+
+                        </div>
+                        <div class="sodienthoai">
+                            <img src="images/sdt.jpg">
+                        </div>
+                        <a href="#">Iphone Việt Nam – Chuyên cung cấp các sản phẩm Iphone chính hãng.</a>
+                        
+                    </div>
+                    <div class="footerthongtin">
+                        <ul>
+                            <a href="#"><li><b>THÔNG TIN</b></li></a>
+                            <a href="#"><li>Phương thức vận chuyển</li></a>
+                            <a href="#"><li>Điều khoản và điều kiện</li></a>
+                            <a href="#"><li><b>THỜI GIAN HOẠT ĐỘNG</b></li></a>
+                            <a href="#"><li>Địa chỉ: Tầng 3 số 102 Nguyễn Hoàng, Mỹ Đình 2, Nam Từ Liêm, Hà Nội</li></a>
+                            <a href="#"><li>Số điện thoại: 0966342792</li></a>
+                            <a href="#"><li>Zalo: 0966342792</li></a>
+                            <a href="#"><li><b>ĐỊA CHỈ LIÊN HỆ</b></li></a>
+                            <a href="#"><li>Mở cửa: 9:00 AM – Đóng cửa: 23:00 PM</li></a>
+                            <a href="#"><li>Hoạt động tất cả các ngày trong tuần.</li></a>
+                            
+                        </ul>
+                    </div>
+                    <div class="footerfanpage">
+                        <p>THEO DÕI FANPAGE</p>
+
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0&appId=2549652035139546&autoLogAppEvents=1"></script>
+                        <div class="fb-page" data-href="https://www.facebook.com/apple/" data-tabs="timeline" data-width="212" data-height="120" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/apple/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/apple/">Apple</a></blockquote></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="taitro">
+                <div class="khungtaitro">
+                    <div class="khunglogotaitro">
+                        <div class="logotaitro">
+                            <a href="#"><img src="images/visa.png"></a>
+                            
+                        </div>
+                        <div class="logotaitro">
+                            <a href="#"><img src="images/master.png"></a>
+                        </div>
+                        <div class="logotaitro">
+                            <a href="#"><img src="images/paypar.png"></a>
+                        </div>
+                        <div class="logotaitro">
+                            <a href="#"><img src="images/skrill.png"></a>
+                        </div>
+                        <div class="logotaitro">
+                            <a href="#"><img src="images/maestro.png"></a>
+                        </div>
+                        <div class="logotaitro1">
+                            <a href="#"><img src="images/visa1.jpg"></a>
+                        </div>
+
+                </div>
+                <div class="chu">
+                    <a href="#"><img src="images/52.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+    </script>
+    <script src="js/hoTro.js"></script>
+    <script src="js/sanPham.js"></script>
+    <script src="js/localstorage.js"></script>
+
+    <script src="js/chuyen-len-giao-dien.js"></script>
+</body>
+
+</html>
