@@ -17,8 +17,7 @@ function chuyenDoiTuongThanhHTML(sanPham) {
 
 function clickGioHang(id) {
     alert("Đưa thành công sản phẩm có ID: " + id); 
-
-
+ 
     
 
     var hang = new Object();
