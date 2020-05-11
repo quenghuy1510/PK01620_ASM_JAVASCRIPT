@@ -181,7 +181,7 @@
         var khuVuc = nodeKhuVuc.value;
         console.log(khuVuc);
         /*b3: tao ra đối tượng từ dữ liệu input*/
-        var sanPham = taoRaDoiTuongSanPham(hinhAnh,ten, giaGoc, phanTram,khuVuc);
+        var sanPham = taoSanPham(hinhAnh,ten, giaGoc, phanTram,khuVuc);
         console.log(sanPham);
         /*b4: lấy danh sách từ cũ local storage lên*/
         var jsonDanhSachSanPham = localStorage.getItem('danhSachSanPham');
